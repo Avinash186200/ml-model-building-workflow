@@ -2,7 +2,7 @@
 
 Start with the [README](../README.md). Files in this folder:
 
-- (method notes live in the README for this repository)
+- [Methodology](methodology.md): method notes and the reasons behind each choice
 
 Related folders:
 

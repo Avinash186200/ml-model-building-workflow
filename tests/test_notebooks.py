@@ -23,5 +23,7 @@ def test_notebook_is_clean(nb_path):
         src = "".join(cell.get("source", []))
         assert not SECRET.search(src), "credential-like assignment"
         assert not LOCAL_PATH.search(src), "local path"
-        if cell.get("cell_type") == "code" and nb_path.parts[len(ROOT.parts)] == "original":
-            assert not cell.get("outputs"), "original notebooks must have outputs stripped"
+        if cell.get("cell_type") == "code":
+            # original/ is an output-free archive; maintained notebooks are committed without outputs too.
+            assert not cell.get("outputs"), "notebooks must be committed with outputs stripped"
+            assert cell.get("execution_count") is None, "notebooks must be committed unexecuted"
