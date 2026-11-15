@@ -51,7 +51,7 @@ tests/
 docs/
   README.md           index of the docs
   methodology.md      method notes and the reasons behind each choice
-original/             the original research notebooks, sanitised (read-only record)
+original/             the original research notebooks (read-only record)
 .github/workflows/ci.yml   runs the tests on every push
 .env.example · requirements.txt · CHANGELOG.md · CONTRIBUTING.md · LICENSE
 ```
@@ -80,9 +80,8 @@ A teaching and reference version of an older workflow, rebuilt cleanly. The synt
 
 ## Original research code
 
-[`original/`](original/README.md) holds the code as I first wrote it for this work, sanitised and nothing else:
-client, company and person names replaced, credentials and local paths removed, data files and notebook outputs
-dropped. It is kept so the real work can be read alongside the maintained version. Some of it contains the issues
-described above; comparing the two shows each fix.
+[`original/`](original/README.md) holds the code as I first wrote it for this project. It is kept so you can
+read the first version alongside the maintained one; some of it contains the issues in the audit table above,
+and comparing the two shows each fix.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) and the [CHANGELOG](CHANGELOG.md).

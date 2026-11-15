@@ -7,5 +7,5 @@ Start with the [README](../README.md). Files in this folder:
 Related folders:
 
 - [`notebooks/`](../notebooks/): the maintained, runnable notebooks
-- [`original/`](../original/README.md): the original research code, sanitised
+- [`original/`](../original/README.md): the original research code (read-only)
 - [`tests/`](../tests/): the test suite run by CI
