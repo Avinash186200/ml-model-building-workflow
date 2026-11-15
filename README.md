@@ -1,5 +1,7 @@
 # ML Model-Building Workflow
 
+[![CI](https://github.com/Avinash186200/ml-model-building-workflow/actions/workflows/ci.yml/badge.svg)](https://github.com/Avinash186200/ml-model-building-workflow/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.11-blue) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 The three-step workflow I used to turn price bars and a list of trade entries into a dataset a classifier can learn from: build technical features per symbol and timeframe, attach them to each trade entry without look-ahead, then standardise, cluster into regimes and fit a first model.
 
 It runs end to end on synthetic bars and synthetic trades, so no data files are needed.
@@ -35,3 +37,12 @@ Set `DATA_DIR` to read and write somewhere other than `data/`.
 ## Status
 
 A teaching and reference version of an older workflow, rebuilt cleanly. The synthetic outcome has a planted trend effect so the model has something to find; the AUC it prints says nothing about real trading.
+
+## Original research code
+
+[`original/`](original/README.md) holds the code as I first wrote it for this work, sanitised and nothing else:
+client, company and person names replaced, credentials and local paths removed, data files and notebook outputs
+dropped. It is kept so the real work can be read alongside the maintained version. Some of it contains the issues
+described above; comparing the two shows each fix.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) and the [CHANGELOG](CHANGELOG.md).
